@@ -1,21 +1,22 @@
-title: "My JuliaCon proceeding"
+title: "Interplay between Chaos and Stochasticity in Celestial Mechanics"
 keywords:
-  - Julia
-  - Optimization
-  - Game theory
-  - Compiler
+  - Dynamical Systems
+  - Chaos Theory
+  - Finite-time Lyapunov Exponent
+  - Probability
+  - Stochasticity
 authors:
-  - name: 1st author
-    orcid: 0000-0003-1361-440X
+  - name: Matteo Manzi
+    orcid: 0000-0002-5229-0746
     affiliation: 1
-  - name: 2nd author
-    affiliation: 1, 2
-  - name: 3rd author
+  - name: Stefano Guidolotti
+    affiliation: 2
+  - name: Mattia Petrini
     affiliation: 2
 affiliations:
-  - name: University
+  - name: MOD SRLS
     index: 1
-  - name: National Lab
+  - name: University of Pisa
     index: 2
-date: 24 April 2019
+date: 31 July 2022
 bibliography: ref.bib
