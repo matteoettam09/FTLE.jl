@@ -14,12 +14,12 @@ function dg_dz(z, ϵ)
     return dg_dz
 end 
 
-ϵ = 0.5
+ϵ = 0.3
 
-T = 500
+T = 200
 t_span = 0:T
 
-len = 200
+len = 400
 
 FTLE = zeros((len, len, length(t_span)))
 
