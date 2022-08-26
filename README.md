@@ -1,6 +1,6 @@
 # FTLE.jl
 
-![image](images/sm_readme.svg "Title")
+![image](paper/figures/std_map.png "Title")
 
 Software developed for the work "Interplay between Chaos and Stochasticity in Celestial Mechanics" presented at [JuliaCon2022](https://juliacon.org/2022/):
 
