@@ -14,7 +14,7 @@
 
 \begin{abstract}
 
-This work is focused on the development of an open-source Julia-based repository for the anlysis of chaos in dynamical systems, 
+This work is focused on the development of an open-source Julia-based repository for the analysis of chaos in dynamical systems, 
 in particular for systems described by ordinary and stochastic differential equations, using Finite-Time Lyapunov exponents (FTLE).
 The novel application of this scalar field for stochastic processes allows one to generalize the definition of chaos in a probabilistic sense.
 This probabilistic generalization is useful for both of uncertainty quantification, and robust trajectory design.
@@ -36,27 +36,29 @@ Building on \cite{Szebehely82}, \cite{ManziAAS2020, VasileManzi} investigated a 
 Here we generalize, inspired by \cite{Balibrea-Iniesta}, in order to introduce a quantification of chaos for stochastic processes.
 
 \section{Metodology}
-
-%slide1 Finite-Time Lyapunov Exponent
+Given dynamical systems in the form:
+% Finite-Time Lyapunov Exponent
 \begin{equation}
     \dot{\mathbf{x}}=\mathbf{f}(\mathbf{x}, \mathbf{p})
 \end{equation}
-
+and introducing the variational equations:
 \begin{equation}
     \frac{\drv}{\drv t} \frac{\partial \mathbf{x} }{\partial \mathbf{x_0}} = \frac{\partial \mathbf{f}}{\partial \mathbf{x}}\frac{\partial \mathbf{x}}{\partial \mathbf{x_0}}
 \end{equation}
-
+the Cauchy-Greene (CG) strain tensor, which is positive definite, can be computed as:
 \begin{equation}
     \Delta(\mathbf{x}, \mathbf{p}) = \left( \frac{\partial \mathbf{x}}{\partial \mathbf{x_0}}\right)^T \frac{\partial \mathbf{x}}{\partial \mathbf{x_0}}
 \end{equation}
-
+where its relative spectrum can be measured by the FTLE:
 \begin{equation}
     \sigma(\mathbf{x}, \mathbf{p}, T)=\frac{1}{|T|}ln(\sqrt{\lambda_{max}(\Delta(\mathbf{x}, \mathbf{p}))})
 \end{equation}
+where $T$ is the time interval associated to the propagation, starting at $t_0$, and $\lambda_{max}$ is the maximum eigenvalue of the Cauchy-Green Strain Tensor.
 
-%slide2 Standard Map
-% One of the most popular mappings in the theory of Dynamical Systems is the so-called \textbf{standard map}, which was
-Discrete Dynamical System introduced by Chirikov \cite{CHIRIKOV1979263}, it is defined by the equations:
+\subsection{Applications}
+A number of dynamical systems can be analysed using this approach. \\
+Introduced by B.V. Chirikov in [47], one of the most popular mappings in the theory of dynamical systems is the so-called \emph{standard map} \cite{celletti}:
+It is defined by the equations:
 \begin{equation}
     \begin{cases}
     y'=y+\epsilon f(x) \\
@@ -64,10 +66,14 @@ Discrete Dynamical System introduced by Chirikov \cite{CHIRIKOV1979263}, it is d
 \end{cases}
 \end{equation}
 where $y\in\mathbb{R}$, $x\in\mathbb{T}\equiv \mathbb{R}/(2\pi\mathbb{Z})$, $\epsilon$ is a positive real parameter, called the perturbing parameter, and $f = f(x)$ is an analytic, periodic function.
-\vspace{0.5cm}
+\begin{figure}[h]
+    \centering
+    \fbox{\includegraphics[width = .43 \textwidth]{figures/std_map.png}}
+    \caption{Finite-Time Lyapunov Exponents scalar fields of the \emph{standard map}}
+    \label{fig:stdmap}
+\end{figure}
 
-%slide4 Perturbed Pendulum
-The motion of a periodically-perturbed pendulum is given by:
+Other classical dynamical systems are the periodically-perturbed pendulum :
 \begin{equation}
 \ddot{x}=(\alpha \cos5t -1 )\sin x
 \end{equation}
@@ -154,5 +160,8 @@ Apply the methodology to systems in Celestial Mechanics: build on "Manzi, Boschm
 \input{bib.tex}
 
 \end{document}
+% Comments:
+% - Ref. [3],[5] missing
+% - riga 52, inseriamo ref? 
 
 % Inspired by the International Journal of Computer Applications template
