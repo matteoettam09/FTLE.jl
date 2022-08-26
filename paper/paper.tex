@@ -45,7 +45,7 @@ and introducing the variational equations:
 \begin{equation}
     \frac{\drv}{\drv t} \frac{\partial \mathbf{x} }{\partial \mathbf{x_0}} = \frac{\partial \mathbf{f}}{\partial \mathbf{x}}\frac{\partial \mathbf{x}}{\partial \mathbf{x_0}}
 \end{equation}
-the Cauchy-Greene (CG) strain tensor, which is positive definite, can be computed as:
+the Cauchy-Green (CG) strain tensor, which is positive definite, can be computed as:
 \begin{equation}
     \Delta(\mathbf{x}, \mathbf{p}) = \left( \frac{\partial \mathbf{x}}{\partial \mathbf{x_0}}\right)^T \frac{\partial \mathbf{x}}{\partial \mathbf{x_0}}
 \end{equation}
@@ -153,15 +153,15 @@ whose stochastic counterpart is:
     \end{figure}
 
 \section{Conclusions and Recommendations}
-Diffusion mechanisms arise both from chaotic behaviour and stochastic perturbations. But there is also an interplay.
+Diffusion mechanisms arise both from chaotic behaviour and stochastic perturbations. 
+But there is also an interplay.
 
-Apply the methodology to systems in Celestial Mechanics: build on "Manzi, Boschmann. The Stochastic Three-body problem: Stochastic Resonances and Diffusion in small-body dynamics, Theory, models and simulations in Celestial Mechanics, 2022."
+As a recommendation for future works, the integration of these developments 
+and results in the library \textit{DynamicalSystems.jl} appears desirable.
+
+Finally, a stochastic framework for celestial mechanics has been introduced, among others, in \cite{manzibosch}, motivates the use of the a stochastic index for chaotic motion:
+results on the stabilty of planetary systems could be influenced by the integration of stochastic perturbations.
 
 \input{bib.tex}
 
 \end{document}
-% Comments:
-% - Ref. [3],[5] missing
-% - riga 52, inseriamo ref? 
-
-% Inspired by the International Journal of Computer Applications template
