@@ -4,9 +4,7 @@
 
 Software developed for the work "Interplay between Chaos and Stochasticity in Celestial Mechanics" presented at [JuliaCon2022](https://juliacon.org/2022/):
 
-[![IMAGE ALT TEXT HERE](./paper/figures/youtube.png)](https://www.youtube.com/watch?v=EzvJ7sddJCc)
-
-[Presentation](https://www.youtube.com/watch?v=-VrRqANuvsk&t=382s)
+[![IMAGE ALT TEXT HERE](./paper/figures/youtube.png)](https://www.youtube.com/watch?v=-VrRqANuvsk&t=382s)
 
 ## Abstract 
 
